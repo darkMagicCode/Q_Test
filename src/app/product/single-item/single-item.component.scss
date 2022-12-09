@@ -1,0 +1,100 @@
+$color_1: #56D9D9;
+$color_2: #344054;
+$color_3: #424242;
+$paddding_1: 10px;
+$marginx_1: 3rem;
+$font-family_1: 'Inter';
+$font-size_1: 20px;
+$font-wight: bolder;
+$background-color_1: #1D2939;
+$radius:8px;
+
+
+// *********------------card head-----------********
+.card{
+    width: 30%;
+    border: solid 0.1px $color_3;
+    margin: 5px;
+    border-radius:$radius ;
+    -webkit-border-radius:$radius ;
+    -moz-border-radius:$radius ;
+    -ms-border-radius:$radius ;
+    -o-border-radius:$radius ;
+        img{
+    width: 100%;
+    height: 250px;
+    border-radius:$radius ;
+    -webkit-border-radius:$radius ;
+    -moz-border-radius:$radius ;
+    -ms-border-radius:$radius ;
+    -o-border-radius:$radius ;
+}
+
+}
+.cardP{
+    display: flex;
+    flex-flow: row wrap;
+}
+.Padding{
+    padding: $paddding_1;
+}
+
+// *********------------card body-----------********
+
+
+.card-body{
+    padding: $paddding_1 ;
+    h1{
+        font-size: $font-size_1;
+        color: $color_2;
+        text-transform: capitalize;
+    }
+    p{
+        color: $color_2;
+        font-size: $font-size_1;
+    }
+    button{
+        width: 100%;
+        padding:$paddding_1 0 ;
+        font-size: $font-size_1;
+        text-transform: uppercase;
+        background-color: $color_1;
+        border: none;
+    }
+    h5{
+        font-weight: $font-wight;
+        color: $color_2;
+        font-size: $font-size_1;
+        text-transform: capitalize;
+        .font-light{
+            font-weight: lighter !important;
+            color: $color_3;
+            font-size:calc( $font-size_1 - 3px) ;
+    
+        }
+      
+    }
+    .rate{
+        text-align: end;
+        color: gold;
+        font-weight: bolder;
+        span{
+            color: black;
+            font-weight: lighter;
+    
+        }
+    }
+    .line-through{
+        text-decoration: line-through;
+        font-weight: $font-wight;
+        
+    }
+    .price{
+        font-weight: $font-wight;
+        span{
+            margin-right: $paddding_1;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,31 @@
+
+<div class="parenthome">
+  <div class="cateFilter">
+    <form>
+      <div *ngFor="let item of allCate">
+        <input
+          (click)="getcurrCate($event)"
+          type="checkbox"
+          [id]="item"
+          [name]="item"
+          [value]="item"
+        />
+        <label [for]="item"> {{ item }}</label
+        ><br />
+      </div>
+    </form>
+  </div>
+  <div class="childselector">
+    <app-single-item [allproductChild]="allProduct"></app-single-item>
+
+    <div class="page" >
+      <a
+        appBgColorActive
+        class="pages"
+        *ngFor="let item of pageCounts; let i = index"
+        (click)="pagesNum(i * 9)"
+        >{{ i + 1 }}</a
+      >
+    </div>
+  </div>
+</div>

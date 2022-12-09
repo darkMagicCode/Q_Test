@@ -1,0 +1,18 @@
+<nav>
+
+   <div class="logoDiv">
+     <img class=" logo"  src="https://i.pinimg.com/originals/08/ed/95/08ed95044990042aa0177ef9a91c1efb.png" alt="">
+      <h2 routerLink="/home" class=" cur" >Home</h2>
+   </div>
+<div class="searchDiv">
+         <input type="search" 
+         #value
+         (keyup)="typing(value.value)" 
+         
+         placeholder="search..." name="" id="">
+         <img class=" hopecart" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="">
+    <h3>Account</h3>
+    <img  class="barIcon" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="">
+</div>
+</nav><hr>
+<router-outlet></router-outlet>

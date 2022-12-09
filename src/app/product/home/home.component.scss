@@ -1,0 +1,30 @@
+$color_1: #56D9D9;
+$color_2: #344054;
+$color_3: #424242;
+$paddding_1: 10px;
+$marginx_1: 3rem;
+$font-family_1: 'Inter';
+$font-size_1: 20px;
+$font-wight: bolder;
+$background-color_1: #1D2939;
+$radius:8px;
+
+.pages{
+    padding: 5px $paddding_1;
+    background-color: $color_1;
+    margin: 20px 0.5rem;
+    cursor: pointer;
+}
+.page{
+    text-align: center;
+    margin: 20px 0.5rem;
+}
+.childselector{
+    width: 75%;
+}
+.cateFilter{
+    width: 25%;
+}
+.parenthome{
+    display: flex;
+}

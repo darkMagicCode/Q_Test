@@ -1,0 +1,35 @@
+$color_1: #56D9D9;
+$color_2: #101828;
+$color_3: #667085;
+$paddding_1: 10px;
+$marginx_1: 3rem;
+$font-family_1: 'Inter';
+
+$background-color_1: #1D2939;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+h3,h4,h5,h6{
+    color: $color_3;
+    font-family: $font-family_1;
+}
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box;
+
+}
+.cur{
+    cursor: pointer;
+}
