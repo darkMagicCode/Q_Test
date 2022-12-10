@@ -1,30 +1,33 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './product/home/home.component';
-import { HeaderComponent } from './product/header/header.component';
-import { SingleItemComponent } from './product/single-item/single-item.component';
-import { PdescPipe } from './pipe/pdesc.pipe';
-import { IpagesPipe } from './pipe/ipages.pipe';
-import { BgColorActiveDirective } from './pipe/bg-color-active.directive';
-import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './Core/components/login/login.component';
+import { NavbarComponent } from './Core/components/navbar/navbar.component';
+import { HomePageComponent } from './Core/components/home-page/home-page.component';
+import { SingleProductComponent } from './Core/components/single-product/single-product.component';
+import { FooterComponent } from './Core/components/footer/footer.component';
+import { PdescPipe } from './shared/pipe/pdesc.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    SingleItemComponent,
-    PdescPipe,
-    IpagesPipe,
-    BgColorActiveDirective
+    LoginComponent,
+    NavbarComponent,
+    HomePageComponent,
+    SingleProductComponent,
+    FooterComponent,
+    PdescPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule,FormsModule
+    AppRoutingModule,HttpClientModule,FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
